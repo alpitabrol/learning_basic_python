@@ -3,14 +3,17 @@
 #
 
 # import the calendar module
-
+import calendar
 
 # create a plain text calendar
-
+# c=calendar.TextCalendar(calendar.MONDAY)
+# st=c.formatmonth(2020,5,0,0)
+# print(st)
 
 # create an HTML formatted calendar
-
-
+hc = calendar.HTMLCalendar(calendar.MONDAY)
+st = hc.formatmonth(2017,4)
+print(st)
 # loop over the days of a month
 # zeroes mean that the day of the week is in an overlapping month
 

@@ -7,6 +7,8 @@ from datetime import datetime
 def main():
   # Times and dates can be formatted using a set of predefined string
   # control codes 
+  now = datetime.now()
+  print(now.strftime("the current year is: %Y")) 
 
   #### Date Formatting ####
   
@@ -14,12 +16,12 @@ def main():
 
 
   # %c - locale's date and time, %x - locale's date, %X - locale's time
-
+  print(now.strftime("%c , %x , %X"))
 
   #### Time Formatting ####
   
   # %I/%H - 12/24 Hour, %M - minute, %S - second, %p - locale's AM/PM
-
+  print(now.strftime("current time: %I , %H , %M , %S , %p "))
 
 
 if __name__ == "__main__":

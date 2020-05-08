@@ -23,6 +23,7 @@ def main():
     # contents = f.read()
     # print (contents)
     
+    
     fl = f.readlines() # readlines reads the individual lines into a list
     for x in fl:
       print (x)
